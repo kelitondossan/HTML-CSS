@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    background-color: lightcoral;
+
+}
+h1{
+    color: aqua;
+    background-color: black;
+
+}
+
+h2{
+    color: aquamarine;
+    background-color: crimson;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+<style>
+
+   /*SELETORRES PERSONALZADOS
+   # = id
+   . = class
+   : = pseudo-class
+   :: = pseudo-element
+   > = childrem*/
+
+
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    a{
+        color:  green;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /*aqui a baixo mostra a mudança de cores de personalização das lintas */
+    a:visited{
+        color: rgb(212, 14, 14);
+
+    }
+    
+    /*a baixo esta a decorção do links quando o mouse passar por cima do das letras aparece sublinhado */
+    a:hover{
+        text-decoration: underline rgb(54, 197, 54);
+        color: black;
+    }
+    /*aqui a baixo quando clicar no link ele ficara amarelo, para ver o efeito e preciso clicar e segurar*/
+    a:active{
+        color: yellow;
+    }
+    a::before{
+        content: '♥';
+
+    }
+    a::after{
+        content: '♥';
+    }
+</style>
+
+
+
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul><!--o target _blank faz com que abra outra aba quando o usuario cliclar no link -->
+        <li><a href="https://github.com/login" target="_blank">REposirorio github</a> </li>
+        <li><a href="https://www.udemy.com/?deal_code=&utm_term=Homepage&utm_content=Textlink&utm_campaign=Rakuten-default&ranMID=39197&ranEAID=HtPvL28WFys&ranSiteID=HtPvL28WFys-szE1cjcmhvPZizd7__2tfQ&LSNPUBID=HtPvL28WFys&utm_source=aff-campaign&utm_medium=udemyads"target="_blank">site udemy</a></li>
+        <li><a href="https://www.estudonauta.com"target="_blank">Site do estudonauta</a></li>
+    </ul>
+</body>
+</html>

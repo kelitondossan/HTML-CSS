@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+
+body{
+    font-family: Arial, Helvetica,
+     sans-serif;
+     background-color: dimgray;
+     margin: 0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+h1{/*configuração do h1 cor das bordas */
+    box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.527);
+}
+
+nav{
+    background-color: rgba(10, 10, 10, 0.377);
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.534);
+    
+}
+
+
+/*decorando link*/
+nav > a { text-decoration: none;
+    color: aliceblue;
+    font: bold;
+margin: 20px;
+
+}
+/*quando mouse passar por cima */
+nav > a:hover{ 
+    /*text-decoration quando mouse passar por cima do item nesse caso e o link aparecera uma linha abaixo do item*/
+    text-decoration: underline;
+    /*text-decoration-color a cor da linha nesse caso sera azul*/
+    text-decoration-color: blue;
+
+}
+
+main{
+    background-color: rgb(233, 199, 199);
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 40px;
+
+
+}
+
+article{
+    background-color: rgb(70, 72, 75);
+}
+
+article > aside{
+    background-color: rgb(180, 119, 45);
+}
+
+footer{
+    background-color: rgb(8, 8, 8);
+    text-align: center;
+    color: white;
+    padding: 4px;
+    margin: 0px;
+
+}
+footer > p{
+    margin: 0px;
+}
+/*
+div#bola{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+*/
+
+section > P{
+    background-color: rgb(35, 56, 56);
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}

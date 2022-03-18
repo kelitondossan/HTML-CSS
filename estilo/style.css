@@ -1,0 +1,237 @@
+@charset "uf8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@font-face{
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf');
+    font-weight: normal;
+}
+
+
+/*root(raiz da arvores do documento)  vai servir para colocar todas as cores na folha do html ou site, coloca se variaveis dentro do root chamando a paleta de cores que foi sugerida pelo cliente */
+:root{
+    --cor0: #4D4D4D;
+    --cor1:rgba(5, 5, 5, 0.767);
+    --cor2:#4D3636;
+    --cor3:#999999;
+    --cor4:#3324248e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+/*seletor universal do css usa o asterisco(*) */
+
+*{
+   margin: 0px;
+   padding: 0px;
+
+}
+
+
+
+
+
+body{
+    background-color:#33242400 ;
+    font-family: var(--fonte-padrao);
+}
+
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+
+
+
+header{
+    background-image: linear-gradient(to bottom, #4D3636, #3324248e,#444242);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: rgb(219, 219, 219);
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+
+    background-color: #4d363611;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+
+}
+/*configurando paragrafo do header */
+header > p{
+    color: rgb(212, 212, 212);
+    font-family: var(--fonte-destaque) ;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+}
+/*configurando nav*/
+nav{
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.356);
+
+}
+/*configurando menu*/
+nav a{
+    color: rgb(197, 191, 180);
+     padding: 10px;
+     border-radius: 15px;
+     text-decoration: none;
+     font-weight: bold;
+     /*transition-duration para dar o efeito qaundo o mouse passar por cima */
+     transition-duration: 0.5s;
+
+
+}
+/*inversão de cores do menu. quando mouse passar por cima em algum item da tela, ele mudara a cor da letra para vermelho  */
+nav > a:hover{
+    background-color: rgba(240, 248, 255, 0.555);
+    color:rgba(165, 42, 42, 0.623);
+}
+/*corpo da pagina */
+
+main{
+    min-width: 300px;
+    max-width: 1000px ;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+
+    background-color: #999999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.863) ;
+   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+    
+
+}
+
+
+main h1{
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+}
+
+main h2{
+    color: var(--cor2);
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, rgba(71, 224, 211, 0.288), transparent);
+    text-indent: 8px
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+main strong{
+    color: #797a0d;
+    font-weight: bold;
+  
+}
+
+
+main a {
+    text-decoration: nome;
+    font-weight: bold;
+    color: #0b441e;
+    background-color: #44424259;
+    padding: 2px 6px;
+   
+}
+
+main a:hover{
+    text-decoration:underline ;
+    color: burlywood;
+}
+
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: #4d363675;
+   
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color:rgba(71, 224, 211, 0.288);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.336);
+}
+
+
+aside > ul{
+    list-style-type: '\1F4F1\00A0\00A0';
+ list-style-position: inside;
+ columns: 2;   
+}
+
+aside > h3{
+    background-color: rgba(78, 78, 236, 0.158);
+    color: var(--cor2);
+    font-family: var(--fonte-destaque);
+    border-radius: 3px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: -10px -10px 0px 0px;
+    background-image: linear-gradient(to right,rgba(78, 78, 236, 0.514),transparent);
+}
+/*roda pe da pagina*/
+footer{
+    background-color:var(--cor1) ;
+    color:white;
+    padding: 5px;
+     border-radius: 3px;
+     text-decoration: none;
+     font-weight: bold;
+     text-align: center;
+
+}
+footer a{
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer a:hover{
+    text-decoration:underline ;
+    color: #797a0d;
+}

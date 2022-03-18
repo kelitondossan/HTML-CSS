@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APREDENDO JAVASCRIPT</title>
+</head>
+<body>    
+   <!--ENTRADA DE DADOS-->
+    <script type="text/javascript">
+        var numero1 = prompt("insira o primeiro numero");
+        var numero2 = prompt("insira o segundo numero ");
+        //SAIDA DE DADOS O RESULTADO
+        var resultaoDivisão = divida(numero1,numero2);
+        //FUNÇÃO ALERT E PARA DAR UM ALERTA NA PAGINA
+
+        alert('o resultado da divisão é igual a: '+ resultaoDivisão);
+        //FUNCTION FUNÇÃO DA CHAMADA DE DIVISÃO 
+        function divida(numero1,numero2){
+            var resultado= 0;
+            resultado = numero1/ numero2;
+            //RETURN AQUI TA PEDINDO O RESULTADO DA DIVISÃO QUE FOI SOLICITADO PELO O USUARIO
+            return resultado;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+body{
+    background-image: 
+    linear-gradient(to bottom,#ebf1d3 1%,#cdddc7,#acbd9a,#a0a5a3f5,#a1aaa4,#97a095,#b2beb9,#aeb6b0,#a5ada9,#a1aca5,#949b92,#aeb3ad );
+
+    background-attachment: fixed;
+}
+
+.label{
+    color: brown;
+}
+.label2{
+    color: black;
+}

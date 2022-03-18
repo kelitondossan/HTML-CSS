@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form action="processa_form.php" method="post">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+
+            <label class="label" for="nome">Nome:</label>
+            <input  class="label"  type="text" minlength="3" id="nome" name="nome" required/>
+
+            <label  class="label" for="data_nascimento">Data de Nascimento:</label>
+            <input  class="label" type="text" id="data_nascimento" name="data_nascimento" >
+
+            <label  class="label" for="cpf"  >CPF:</label>
+            <input  class="label" type="text" maxlength="11" minlength="11"
+            id="cpf" name="cpf" required><!-- required -> para deixar o campo obrigatorio sem isso o usuario não conseguir passar ou fazer login ou se cadastrar no site -->
+
+            <!--placeholder para dar exmplo de como o usuario ira definir no momento em que for preencher o campo 
+            pattern serve para mascarar o campo e definir um padrão de ordemdos numeros-->
+
+            <label  class="label" for="tel">Tel.Celular:</label>
+            <input class="label"  type="tel" maxlength="14"  id="tel" name="tel" placeholder="79-999595363" required>
+
+          <fieldset>
+              <legend>Endereço</legend>
+              <label class="label"  for="tipo_endereco">TIpo:</label>
+              <select class="label@" name="tipo_endereco" id="tipo_endereco">
+                  <option value="">Selecione</option>
+                  <option value="rua">Rua</option>
+                  <option value="estrada">Estrada</option>
+                  <option value="rodovia">Rodovia</option>
+                  <option value="outro">Outro</option>
+              </select>
+              <label class="label"  for="logradouro_endereco">Lougraduro</label>
+              <input class="label"  type="text" id="lougradouro_endereco" name="lougradouro_endereco">
+
+              <label class="label" for="numero_endereco">N°:</label>
+              <input class="label" type="text" maxlength="4" minlength="2"
+              id="numero_endereco" name="numero_endereco" >
+              <label class="label" for="complemento_endereco">Complemento</label>
+              <input class="label" type="complemento_endereco" id="complemento_endereco" name="complemento_endereco">
+          </fieldset>
+          <fieldset>
+              <legend>Fale Conosco</legend>
+              <label for="tipo_msg">Tipo de Mensagem</label>
+              <!--aqui a baixo se encontra as caixinhas em circulo de marcação -->
+               
+              <input type="radio" name="tipo_msg" value="Sugestão" placeholder="Sugestão" >
+
+              <input type="radio" name="tipo_msg" value="Critica" placeholder="Critica">
+
+              <input type="radio" name="tipo_msg" value="Elogio"placeholder="Elogio">
+
+              <label for="msg">Mensagem</label>
+
+                <!--caixa que escreve as mensagens-->
+              <textarea name="msg" id="msg" cols="100" rows="25"></textarea>
+          </fieldset>
+          <fieldset>
+              <button type="submit">Enviar Mensagem</button>
+              <button type="reset">Limpar o formulario</button>
+          </fieldset>
+
+
+
+
+</body>
+</html>

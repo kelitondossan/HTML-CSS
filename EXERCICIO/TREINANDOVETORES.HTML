@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento de vetores em javascript</title>
+</head>
+<body>
+    <script type="text/javascript" >
+       var numeros = [];
+       numeros [0] = solitaPrimeiroNumero();
+       numeros[1] = solicitaSegundoNumero();
+       var resultadoDivisao = divida(numeros);
+       alert('O resultado da divisão é igual a: '+ resultadoDivisao);
+       
+       /*Função JavaScript 
+       Esta função não 
+       recebe parâmetros*/
+       function solitaPrimeiroNumero(){
+           var numero1 =prompt("Insira o primeiro número");
+           if(numero1 < 0){
+               alert("O número precisa ser inteiro e positivo");
+               //Este tipo de retorno, onde a própria função é chamada
+               return solitaPrimeiroNumero();
+           }else{
+               return numero1;
+           
+           }
+       }
+
+       function solitaPrimeiroNumero(){
+           var numero2 =prompt("Insira o primeiro número");
+           if(numero2 < 0){
+               alert("O número precisa ser inteiro e positivo");
+               //Este tipo de retorno, onde a própria função é chamada
+               return solitaPrimeiroNumero();
+           }else{
+               return numero2;
+           
+           }
+       }
+
+      function divida(numeros){
+          var resultado = 0;
+     
+      resultado = numeros[0] / numeros[1];
+      return resultado;
+    }
+    </script>
+</body>
+</html>

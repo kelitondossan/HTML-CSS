@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../EXERCICIO/globo-terrestre.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Requisição XMLHttpRequest</title>
+</head>
+<body>
+    <h1>Consulta de Endereço atraves de CEP</h1>
+
+    <input id="cep" name="cep" type="text" placeholder="Digite apenas numero "/>
+
+  <button onclick="consultaCEP()"> Consulta</button>
+
+  <h2>Resultado</h2>
+
+  <p 
+  id="resultado">
+  </p>
+
+</body>
+
+ <script type="text/javascript">
+     function consultaCEP()
+     {
+  var cep = document.getElementById("cep").value;
+
+  var xmlHttpRequest= new XMLHttpRequest();
+
+  var url = "http://cep.la/"+cep;
+
+  xmlHttpRequest.open("GET", url, true);
+  xmlHttpRequest.setRequestHeader("Accept", "application/json");
+
+  xmlHttpRequest.onreadystatechange = function(){
+      if(xmlHttpRequest.readystate == 3){
+          console.log('carregando o conteudo');
+      }
+
+      if(xmlHttpRequest.readystate == 4){
+          console.log('CEP :' + xmlHttpRequest.responseText);
+
+          var jsonResponse = JSON.parse(xmlHttpRequest.responseText);
+
+
+          document.getElementById("resultado").innerHTML = 'CEP: '+ jsonResponse.cep + '<br/>' + 'UF: ' + jsonResponse.uf + '<br/>'+ 'cidade: '+ jsonResponse.cidade+ '<br/>'+ 'bairro'+ jsonResponse.bairro +'<br/>'+ 'lograduro: '+ jsonResponse.logradouro;
+          console.log(jsonResponse);
+      }
+  }
+     }
+
+ </script>
+</html>

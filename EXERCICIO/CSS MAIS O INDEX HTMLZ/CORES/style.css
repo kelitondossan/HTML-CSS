@@ -1,0 +1,77 @@
+@charset 'UTF-8';
+
+*{
+    font-size: Arial, Helvetica, sans-serif;;
+   /* height: 100%;*/
+}
+
+body{
+    /*Cor degrader do fundo do site
+    cores  extraida de uma imagem do google no site color.adobe.com  */
+    background-image: linear-gradient(to right, #000100,#444A30,#1D4133,#4A6E40);
+}
+
+main{
+
+    /*cor de fundo do conteudo do texto */
+    background-color: rgb(67, 150, 
+    67);
+   
+     /*FONTE EM ITALICO */
+    font-style: italic;
+
+
+    /*bordas da caixa de texto com sombras */
+    box-shadow: 5px 5px 15px #00010042;
+
+
+
+    /*FAZ COM QUE AS BORDAS DA CAIXA DE TEXTO FIQUEM ARREDONDADAS */
+    border-radius: 20px;
+
+    height: 500px;
+
+
+    /*largura do ou tamanho do conteudo do texto */
+    width: 520px; 
+
+
+    /*para dar uma regulada na caixa do texto. Se o texto ficar muito perto das bordas  */
+    padding: 10px;
+
+
+    /*move a caixa de texto para o meio da tela */
+    margin: auto;
+}
+
+
+
+h1{
+    /* cor do titulo  */
+ color: #7a5006;
+
+/* POSIÇÃO DO TITULO, ELE SE ENCOTRA NO CENTRO NO COMANDO A BAIXO  */
+ text-align: center;
+
+ /* sombra do titulo, cor colocada preto  */
+ text-shadow: 1px 1px 0px #493106;
+
+}
+
+
+
+
+h2{/* cor titulo 2 */
+
+color: #302616;
+text-shadow: 1px 1px 0px black;
+}
+
+
+
+
+p{ /*ajuste do texto*/
+    text-align:justify ;
+    text-shadow: 1px 1px 0px rgb(153, 143, 143);
+}
+
